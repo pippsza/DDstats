@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #2d2d2d;
+  width: 100%;
+  height: 100%;
+}
+header {
+  background-color: #555555;
+
+  padding: 10px 0;
+  border-bottom: 1px black solid;
+}
+h1 {
+  font-family: 'Emblema One', system-ui;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
+  text-align: center;
+  color: #ffa500;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+input {
+  background-color: #6e6e6e;
+  border: black 1px solid;
+  &:focus {
+    border: #ffa500 solid 1px;
+  }
+  &:hover {
+    border: #ffa500 solid 1px;
+  }
+}
+footer {
+  background-color: #555555;
+  padding: 20px;
+  border-top: 1px black solid;
+  position: absolute;
+
+  bottom: 0;
+
+  width: 100%;
+}
+
+.footer-p {
+  font-size: 10px;
+  font-family: 'Emblema One', system-ui;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  color: #ffa500;
+  bottom: 5;
+  left: 5;
+}

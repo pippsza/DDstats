@@ -2,22 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./Pippsza.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./Pippsza.png" />
+    <link rel="icon" sizes="192x192" href="./Pippsza.png" />
+    <title>DDcompare</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
+    <header><h1>DDstats</h1></header>
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+      <div>
+        <input type="text" class="js-input" />
+        <button class="js-button">Compare player</button>
+      </div>
+      <ul class="js-list">
+        <li class="js-item"></li>
+      </ul>
     </main>
-
-    <load src="./partials/footer.html" />
-
-    <script type="module" src="./main.js"></script>
+    <footer>
+      <p class="footer-p">Created by pippsza</p>
+    </footer>
   </body>
 </html>
