@@ -30,6 +30,7 @@ main {
 input {
   background-color: #6e6e6e;
   border: black 1px solid;
+  height: 30px;
   &:focus {
     border: #ffa500 solid 1px;
   }
@@ -47,6 +48,14 @@ footer {
 
   width: 100%;
 }
+.compare-button {
+  height: 30px;
+  background-color: #dfdede;
+  &:hover,
+  &:focus {
+    background-color: rgb(191, 191, 191);
+  }
+}
 
 .footer-p {
   font-size: 10px;
@@ -57,4 +66,7 @@ footer {
   color: #ffa500;
   bottom: 5;
   left: 5;
+}
+.dd-span {
+  color: #6ac1ff;
 }
