@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Emblema+One&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -12,6 +13,10 @@ header {
 
   padding: 10px 0;
   border-bottom: 1px black solid;
+}
+p {
+  font-family: 'Emblema One', system-ui;
+  font-weight: 100;
 }
 h1 {
   font-family: 'Emblema One', system-ui;
@@ -31,6 +36,11 @@ input {
   background-color: #6e6e6e;
   border: black 1px solid;
   height: 30px;
+  padding: 10px;
+  &::placeholder {
+    color: white;
+    opacity: 0.5;
+  }
   &:focus {
     border: #ffa500 solid 1px;
   }
@@ -69,4 +79,22 @@ footer {
 }
 .dd-span {
   color: #6ac1ff;
+}
+main {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.list-item {
+  padding: 10px;
+  background-color: #555555;
 }
