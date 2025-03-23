@@ -5,6 +5,7 @@ const button = document.querySelector('.js-button');
 const input = document.querySelector('.js-input');
 const list = document.querySelector('.js-list');
 const item = document.querySelector('.js-item');
+
 const players = [];
 const handlerIzitoast = (title, message, color) => {
   iziToast.show({
@@ -36,10 +37,8 @@ const getTeeInfo = async playerName => {
 
   return response.data;
 };
+s;
 
-const test = button.addEventListener('click', () => {
-  cardInsert();
-});
 document.addEventListener('keydown', ev => {
   if (ev.key === 'Enter') {
     cardInsert();
@@ -107,3 +106,4 @@ async function cardInsert() {
 }
 
 // https://ddnet.org/players/?query=Cor -МОЖНО ДЕЛАТЬ ЗАПРОС НА СЕРВЕР И ПОЛУЧАТЬ ПОДХОДЯЩИЕ НИКИ
+// https://ddstats.tw/player/json?player=Cor
