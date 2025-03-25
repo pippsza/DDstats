@@ -37,7 +37,6 @@ const getTeeInfo = async playerName => {
 
   return response.data;
 };
-s;
 
 document.addEventListener('keydown', ev => {
   if (ev.key === 'Enter') {
