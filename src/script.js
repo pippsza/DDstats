@@ -44,10 +44,14 @@ document.addEventListener('keydown', ev => {
   }
 });
 
+button.addEventListener('click', ev => {
+  cardInsert();
+});
+
 async function cardInsert() {
   const inputValue = input.value;
   input.value = '';
-  button.disabled = true;
+  // button.disabled = true;
   // document.removeEventListener();
   if (players.includes(inputValue) || inputValue.trim() === '') {
     handlerIzitoast('', 'Player is already added!', 'green');
